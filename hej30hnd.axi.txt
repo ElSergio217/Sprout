@@ -1,0 +1,24 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	new file:   Sprout/css/bootstrap.min.css
+#	new file:   Sprout/css/style.css
+#	new file:   Sprout/images/about.png
+#	new file:   Sprout/images/check.png
+#	new file:   Sprout/images/desktop.png
+#	new file:   Sprout/js/bootstrap.min.js
+#	new file:   Sprout/js/init.js
+#	new file:   Sprout/js/jquery-1.11.0.min.js
+#	new file:   Sprout/js/jquery-1.6.1.min.js
+#	new file:   Sprout/js/jquery.leanModal.min.js
+#
+# Untracked files:
+#	Sprout/Assets/Stock Images/
+#	Sprout/Assets/pics/kipp/5.JPG
+#
+
