@@ -26,7 +26,7 @@
 		    width: 70%; 
 		    position: relative; 
 		    padding: 0px 0;
-           
+           z-index:-1;
             height: auto;
 		}
 		#home { 
@@ -37,7 +37,7 @@
 		    width: 100%; 
 		    position: relative; 
 		    padding: 50px 0; 
-            z-index: -1;
+            z-index: -2;
 		}
 		#about { 
 			background: url(images/about.png) 50% 0 fixed; 
@@ -59,10 +59,7 @@
        @font-face { font-family: nav; src: url('Assets/ProximaNova-Bold.otf');}
         @font-face { font-family: bod; src: url('Assets/ProximaNova-Reg.otf');}
         h1{
-            height: auto;
             font-family: nav;
-            width: 100%;
-            height: auto;
             font-size: 20px;
             color:#189348;
         }
@@ -81,41 +78,36 @@
 
     
     
-        <nav id="nav" class="nav" style="margin-left:auto;margin-right:auto; background-color:white; width:70%;">
+    <nav id="nav" class="nav" style="margin-left:auto;margin-right:auto; background-color:white; width:70%; top:95px">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:green">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#96ca5a">
+                    <span class="icon-bar" style="background-color:#189348"></span>
+                    <span class="icon-bar" style="background-color:#189348"></span>
+                    <span class="icon-bar" style="background-color:#189348"></span>
                 </button>
-                <a href="index.html"><img src="Assets/Logo.png" style="position:absolute;width:15%;top:10px"></a>
+                <a href="index.html"><img src="Assets/Logo.png" style="position:absolute;width:15%;top:10px;z-index:10"></a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar" style="left:20%">
-                <ul class="nav navbar-nav">
-                    <li><a href="#About"><h1>ABOUT</h1></a></li>
-                    <li><a href="#Portfolio"><h1>PORTFOLIO</h1></a></li>
-                    <li><a href="#CS"><h1>CASE STUDIES</h1></a></li>
-                    <li><a href="#Partners"><h1>PARTNERS</h1></a></li>
-                    <li><a href="#Contact"><h1>CONTACT</h1></a></li>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li  data-toggle="collapse" data-target="#myNavbar"><a href="index.html#About"><h1>ABOUT</h1></a></li>
+                    <li  data-toggle="collapse" data-target="#myNavbar"><a href="index.html#Portfolio"><h1>PORTFOLIO</h1></a></li>
+                    <li  data-toggle="collapse" data-target="#myNavbar"><a href="index.html#CS"><h1>CASE STUDIES</h1></a></li>
+                    <li  data-toggle="collapse" data-target="#myNavbar"><a href="index.html#Partners"><h1>PARTNERS</h1></a></li>
+                    <li  data-toggle="collapse" data-target="#myNavbar"><a href="index.html#Contact"><h1>CONTACT</h1></a></li>
                 </ul>
             </div>
         </div>
-        </nav>
-  
-
-
-
-
+    </nav>
 
         <!-- Nice Description -->
         <section id="home" data-speed="4"style="margin-top:95px">
             <section id="intro" data-speed="6">
+                <img src="Assets/Green-Building2.PNG" style="position:absolute;left:55%;top:30px;width:40%;" />
                 <div class="container">
                     <div class="row-fluid">
                         <h1>Our Mission</h1>
                         <div class="span4" style="width:33%; background-color:white; margin-left:100px;color:#96ca5a;">
-
                             <h2>
                                 To create innovative, green friendly, student centered learning environments
                                 to cultivate creativity, collaboration, and excellence. Our approach to school
@@ -129,11 +121,8 @@
                                 decades. Our mission is to provide child-centered environments that unlock
                                 academic potential and put learning first.
                             </h2>
-
                         </div>
-                        <div class="span4" style="width:55%">
-                            <img src="Assets/Green-Building2.PNG" />
-                        </div>
+                         
                     </div>
                 </div>
             </section>
@@ -144,8 +133,9 @@
         <section id="intro" data-speed="6" data-type="background">
             <div class="container">
                 <div class="row-fluid">
-                    <h1>About</h1>
-                    <div class="span4" style="width:50%; background-color:white;">
+                    <h1 style="position: absolute;left:1%;color:#96ca5a">ABOUT</h1>
+                    <img src="Assets/Leave.png" style="position: absolute;left:.5%;top:40px;" />
+                    <div class="span4" style="width:50%; background-color:white;margin-top:50px">
                         <h2>
                             <p>
                                 Sprout is an innovative, sustainably focused, school renovation and
@@ -178,7 +168,8 @@
             <section id="intro" data-speed="6" data-type="background" style="padding-bottom:150px">
                 <div class="container">
                     <div class="row-fluid">
-                        <h1>CASE STUDIES</h1>
+                        <h1 style="position: absolute;left:1%;color:#96ca5a">CASE STUDIES</h1>
+                        <img src="Assets/Leave.png" style="position: absolute;left:.5%;top:40px;" />
                         <div class="span4" style="width:20%; background-color:white; ">
                             <div class="span4" style="width:100%;">
                                 <img src="Assets/pics/bugs/3.JPG" style="margin-top:100px">
@@ -189,15 +180,16 @@
                 </div>
             </section>
         </section>
-    <a href="casestudies.html"><h2 style="color:#96ca5a;z-index:100;position: absolute;left:50%;margin-top:-200px;">See More</h2></a>
+    <a href="casestudies.html"><h2 style="color:#96ca5a;z-index:;position: absolute;left:50%;margin-top:-200px;">See More</h2></a>
     
         <!-- Portfolio -->
     <a class="anchor" id="top" name="Portfolio"></a>
         <section id="intro" data-speed="6" data-type="background" style="padding-bottom:150px">
             <div class="container">
                 <div class="row-fluid">
-                    <h1>PORTFOLIO</h1>
-                    <div class="span4" style="width:20%">
+                    <h1 style="position: absolute;left:1%;color:#96ca5a">PORTFOLIO</h1>
+                    <img src="Assets/Leave.png" style="position: absolute;left:.5%;top:40px;" />
+                    <div class="span4" style="width:20%;">
                         <img src="Assets/pics/kipp/1.JPG" style="margin-top:100px;"/>
                         <center><h2>KIPP-Summer 2014</h2></center>
                     </div>
@@ -206,9 +198,9 @@
                         <center><h2>BUGS-Summer 2013/2014</h2></center>
                     </div>
                 </div>
-                <a href="portfolio.html"><h2 style="color:#96ca5a;z-index:100;position: absolute;left:50%">See More</h2></a>
             </div>
         </section>
+    <a href="portfolio.html"><h2 style="color:#96ca5a;z-index:2;position: absolute;left:50%;margin-top:-125px">See More</h2></a>
 
         <!-- Partners -->
     <a class="anchor" id="top" name="Partners" style="top:-200px"></a>
@@ -216,12 +208,11 @@
             <section id="intro" data-speed="6" data-type="background">
                 <div class="container">
                     <div class="row-fluid">
-                        <h1>PARTNERS</h1>
+                        <h1 style="position: absolute;left:1%;color:#96ca5a">PARTNERS</h1>
+                        <img src="Assets/Leave.png" style="position: absolute;left:.5%;top:40px;" />
+                        <img src="Assets/Alex.png" style=" position: absolute; width:15%;margin-left:0%;top:10%">
                     </div>
-                    <div class="span4">
-                        <img src="Assets/Alex.png" style="width:50%">
-                    </div>
-                    <div class="span4" style="width:50%">
+                    <div class="span4" style="width:40%; margin-left:20%;margin-top:50px">
                         <h1>Alex Jerez</h1>
                         <h2>President</h2>
                         <h2>
@@ -254,7 +245,7 @@
                 <div class="row-fluid">
                     <div class="span4">
                         <img src="Assets/Circlelogo.png" />
-                        <h1 style="margin-left:100px;margin-top:-50px">CONTACT US</h1>
+                        <h1 style="margin-left:100px;margin-top:-50px;color:#96ca5a">CONTACT US</h1>
                     </div>
                     <div class="span4">
                         <h2>
